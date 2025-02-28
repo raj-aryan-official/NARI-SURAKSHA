@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Naari Suraksha</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <img src="https://media.istockphoto.com/id/1173058386/vector/butterfly-woman-with-leaf-wings-design-inspiration.jpg?s=612x612&w=0&k=20&c=6gpNliw06SNCsJ1-IUgErtnqak3ROFLw0O3nHgMyq58=" alt="Naari Suraksha Logo" class="logo">
+    <div id="container" class="container">
+        <h1>Naari Suraksha</h1>
+        
+        <div class="features-grid">
+            <!-- Journey Planning Section -->
+            <div class="feature-card">
+                <i class="fas fa-route"></i>
+                <h3>Start Journey</h3>
+                <div class="feature-content">
+                    <input type="text" placeholder="Enter Start Location" class="input-field">
+                    <input type="text" placeholder="Enter Destination" class="input-field">
+                    <button class="btn">Start Tracking</button>
+                </div>
+            </div>
+
+            <!-- Safe Route Section -->
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Safe Route</h3>
+                <div class="feature-content">
+                    <select class="input-field">
+                        <option>Select Route Type</option>
+                        <option>Safest Route</option>
+                        <option>Crowded Route</option>
+                        <option>Well-lit Route</option>
+                    </select>
+                    <button class="btn">Show Route</button>
+                </div>
+            </div>
+
+            <!-- Emergency Contacts Section -->
+            <div class="feature-card">
+                <i class="fas fa-phone-emergency"></i>
+                <h3>SOS Emergency</h3>
+                <div class="feature-content">
+                    <button class="btn emergency-btn">SOS Call</button>
+                    <button class="btn">Alert Contacts</button>
+                </div>
+            </div>
+
+            <!-- Nearby Responders Section -->
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Nearby Responders</h3>
+                <div class="feature-content">
+                    <button class="btn">Find Help</button>
+                    <div class="responders-list">
+                        <!-- Will be populated dynamically -->
+                    </div>
+                </div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-video"></i>
+                <h3>Auto Recording</h3>
+                <div class="feature-content">
+                    <button class="btn record-btn">Start Recording</button>
+                    <p class="recording-status">Status: Not Recording</p>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="map-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

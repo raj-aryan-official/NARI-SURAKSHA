@@ -1,0 +1,30 @@
+/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Naari Suraksha</title>
+</head>
+<body>
+    <img src="https://media.istockphoto.com/id/1173058386/vector/butterfly-woman-with-leaf-wings-design-inspiration.jpg?s=612x612&w=0&k=20&c=6gpNliw06SNCsJ1-IUgErtnqak3ROFLw0O3nHgMyq58=" alt="Naari Suraksha Logo" class="logo">
+    <div id="container" class="container">
+        <h1>Naari Suraksha</h1>
+        <h3>Enter Your Mobile Number to Login</h3>
+        <form id="loginForm">
+            <input type="tel" 
+                   id="mobile" 
+                   placeholder="Enter Your Mobile No:" 
+                   pattern="[0-9]{10}" 
+                   maxlength="10" 
+                   class="input-field"
+                   autocomplete="tel">
+            <p>By continuing, you may receive an SMS for verification</p>
+            <button type="submit" class="btn">Login & Signup</button>
+        </form>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

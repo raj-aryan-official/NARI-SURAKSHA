@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>OTP Verification - Naari Suraksha</title>
+</head>
+<body>
+    <img src="https://media.istockphoto.com/id/1173058386/vector/butterfly-woman-with-leaf-wings-design-inspiration.jpg?s=612x612&w=0&k=20&c=6gpNliw06SNCsJ1-IUgErtnqak3ROFLw0O3nHgMyq58=" alt="Naari Suraksha Logo" class="logo">
+    <div id="container" class="container">
+        <h1>Verify OTP</h1>
+        <h3>Enter the OTP sent to your mobile</h3>
+        <form id="otpForm">
+            <input type="text" 
+                   inputmode="numeric"
+                   id="otp" 
+                   autocomplete="one-time-code"
+                   pattern="\d{6}"
+                   maxlength="6"
+                   class="input-field otp-field"
+                   placeholder="Enter OTP">
+            <button type="submit" class="btn">Verify OTP</button>
+        </form>
+        <p id="timer">Resend OTP in <span>30</span>s</p>
+    </div>
+    <script src="otp.js"></script>
+</body>
+</html>
